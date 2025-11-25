@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PURE REVIVAL MINISTRIES</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}body{font-family:'Segoe UI',sans-serif;background:linear-gradient(135deg,#1a1a2e,#16213e);min-height:100vh;color:#fff}.header{background:linear-gradient(135deg,#6a0dad,#4b0082);padding:1.5rem;text-align:center;position:relative}.logo{font-size:2rem;font-weight:bold;color:#fff}.tagline{color:#fff;font-size:1rem;font-style:italic}.nav{background:rgba(255,255,255,0.1);padding:0.8rem;display:flex;justify-content:center;gap:0.8rem;flex-wrap:wrap}.nav button{background:transparent;border:2px solid #d4af37;color:#d4af37;padding:0.5rem 1rem;border-radius:25px;cursor:pointer;transition:all 0.3s}.nav button:hover,.nav button.active{background:#d4af37;color:#1a1a2e}.container{max-width:1100px;margin:1.5rem auto;padding:0 1rem}.section{display:none}.section.active{display:block}.hero{text-align:center;padding:2rem 1rem}.hero h1{font-size:2rem;margin-bottom:1rem;color:#d4af37}.hero p{opacity:0.9;max-width:500px;margin:0 auto;line-height:1.6}.card{background:rgba(255,255,255,0.08);border-radius:15px;padding:1.5rem;margin-bottom:1.5rem;border:1px solid rgba(212,175,55,0.2)}.card h3{color:#d4af37;margin-bottom:1rem}.upload-area{border:3px dashed rgba(212,175,55,0.5);border-radius:15px;padding:1.5rem;text-align:center;cursor:pointer}.upload-icon{font-size:2.5rem;margin-bottom:0.5rem}.form-group{margin-bottom:1rem}.form-group label{display:block;margin-bottom:0.4rem;color:#d4af37}.form-group input,.form-group textarea,.form-group select{width:100%;padding:0.7rem;border:2px solid rgba(212,175,55,0.3);border-radius:8px;background:rgba(255,255,255,0.05);color:#fff}.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,0.5)}.btn{background:linear-gradient(135deg,#8a2be2,#6a0dad);color:#fff;border:none;padding:0.9rem 2rem;border-radius:10px;cursor:pointer;font-weight:bold;width:100%;font-size:1rem;transition:all 0.3s;box-shadow:0 4px 15px rgba(138,43,226,0.3)}
+        .btn:hover{background:linear-gradient(135deg,#9b30ff,#8a2be2);transform:translateY(-2px);box-shadow:0 6px 25px rgba(138,43,226,0.5)}.media-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem}.media-card{background:linear-gradient(135deg,rgba(30,30,60,0.5),rgba(20,20,40,0.8));border-radius:15px;overflow:hidden;border:1px solid rgba(138,43,226,0.3);transition:all 0.3s}
+        .media-card:hover{transform:translateY(-8px);box-shadow:0 15px 40px rgba(138,43,226,0.3);border-color:#8a2be2}.media-thumbnail{width:100%;height:160px;background:#2a2a4e;display:flex;align-items:center;justify-content:center;overflow:hidden}.media-thumbnail img,.media-thumbnail video{width:100%;height:100%;object-fit:cover}.media-thumbnail .placeholder{font-size:3rem}.media-info{padding:0.8rem}.media-info h4{color:#9b30ff;margin-bottom:0.4rem;font-size:0.95rem}.media-info p{font-size:0.8rem;opacity:0.8}.media-info .date{font-size:0.75rem;opacity:0.6}.media-actions{display:flex;gap:0.5rem;margin-top:0.6rem}.media-actions button{flex:1;padding:0.4rem;border:none;border-radius:5px;cursor:pointer;font-size:0.8rem}.watch-btn{background:linear-gradient(135deg,#8a2be2,#6a0dad);color:#fff;font-weight:600;transition:all 0.3s}
+        .watch-btn:hover{background:linear-gradient(135deg,#9b30ff,#8a2be2);box-shadow:0 3px 15px rgba(138,43,226,0.4)}.delete-btn{background:#e74c3c;color:white}.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.95);z-index:1000;justify-content:center;align-items:center}.modal.active{display:flex}.modal-content{max-width:800px;width:95%;max-height:90vh;background:#1a1a2e;border-radius:15px;overflow:hidden}.modal-header{background:#d4af37;color:#1a1a2e;padding:1rem;display:flex;justify-content:space-between;align-items:center}.close-btn{background:none;border:none;font-size:1.5rem;cursor:pointer;color:#1a1a2e}.modal-body{padding:1rem;max-height:75vh;overflow-y:auto}.modal-body video,.modal-body img{width:100%;max-height:45vh;object-fit:contain;border-radius:8px}.interaction-bar{display:flex;gap:0.8rem;margin:1rem 0;padding:0.8rem 0;border-top:1px solid rgba(212,175,55,0.2);border-bottom:1px solid rgba(212,175,55,0.2)}.interaction-btn{background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.3);color:#d4af37;padding:0.4rem 0.8rem;border-radius:20px;cursor:pointer;font-size:0.85rem;display:flex;align-items:center;gap:0.4rem}.interaction-btn.liked{background:#d4af37;color:#1a1a2e}.comments-section h4{color:#d4af37;margin-bottom:0.8rem}.comment-form textarea{width:100%;padding:0.6rem;border:2px solid rgba(212,175,55,0.3);border-radius:8px;background:rgba(255,255,255,0.05);color:#fff;margin-bottom:0.5rem;min-height:50px;resize:vertical}.comment-form button{background:#d4af37;color:#1a1a2e;border:none;padding:0.4rem 1rem;border-radius:8px;cursor:pointer}.comment{background:rgba(255,255,255,0.05);padding:0.7rem;border-radius:8px;margin-bottom:0.6rem;border-left:3px solid #d4af37}.comment-header{display:flex;justify-content:space-between;margin-bottom:0.3rem}.comment-author{color:#d4af37;font-weight:bold;font-size:0.85rem}.comment-date{font-size:0.7rem;opacity:0.6}.comment-text{font-size:0.85rem}.delete-comment{background:#e74c3c;color:white;border:none;padding:0.2rem 0.4rem;border-radius:4px;cursor:pointer;font-size:0.7rem}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:1.5rem}.stat-card{background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.3);border-radius:10px;padding:1rem;text-align:center}.stat-card .number{font-size:1.8rem;color:#d4af37;font-weight:bold}.stat-card .label{font-size:0.8rem;opacity:0.8}.empty-state{text-align:center;padding:2rem}.empty-state .icon{font-size:3rem;margin-bottom:0.5rem}.category-filter{display:flex;gap:0.4rem;margin-bottom:1rem;flex-wrap:wrap}.category-filter button{background:rgba(255,255,255,0.1);border:1px solid rgba(212,175,55,0.3);color:#fff;padding:0.3rem 0.6rem;border-radius:15px;cursor:pointer;font-size:0.8rem}.category-filter button:hover,.category-filter button.active{background:#d4af37;color:#1a1a2e}.footer{text-align:center;padding:2rem;border-top:2px solid rgba(138,43,226,0.3);background:linear-gradient(135deg,rgba(20,20,40,0.8),rgba(10,10,25,0.9))}.footer p{opacity:0.7;font-size:0.85rem}.main-content{display:none}.main-content.visible{display:block}#userInfo{position:absolute;top:0.8rem;right:1rem;display:flex;align-items:center;gap:0.5rem}@media(max-width:600px){.logo{font-size:1.5rem}.stats{grid-template-columns:1fr}.media-grid{grid-template-columns:1fr}#userInfo{position:static;margin-top:0.8rem;justify-content:center}}
+    </style>
+</head>
+<body>
+    <div id="authModal" class="modal active">
+        <div class="modal-content" style="max-width:400px;">
+            <div class="modal-header"><h3 id="authTitle">✝️ Welcome to Pure Revival</h3><span></span></div>
+            <div class="modal-body">
+                <div id="loginForm">
+                    <h4 style="color:#d4af37;margin-bottom:1rem;">Login</h4>
+                    <div class="form-group"><label>Username</label><input type="text" id="loginUsername" placeholder="Username"></div>
+                    <div class="form-group"><label>Password</label><input type="password" id="loginPassword" placeholder="Password"></div>
+                    <button class="btn" onclick="login()">🔓 Login</button>
+                    <p style="text-align:center;margin-top:1rem;opacity:0.8;">New here? <a href="#" onclick="showSignup()" style="color:#d4af37;">Sign Up</a></p>
+                </div>
+                <div id="signupForm" style="display:none;">
+                    <h4 style="color:#d4af37;margin-bottom:1rem;">Create Account</h4>
+                    <div class="form-group"><label>Full Name</label><input type="text" id="signupName" placeholder="Full name"></div>
+                    <div class="form-group"><label>Username</label><input type="text" id="signupUsername" placeholder="Username"></div>
+                    <div class="form-group"><label>Password</label><input type="password" id="signupPassword" placeholder="Password"></div>
+                    <button class="btn" onclick="signup()">✝️ Create Account</button>
+                    <p style="text-align:center;margin-top:1rem;opacity:0.8;">Have account? <a href="#" onclick="showLogin()" style="color:#d4af37;">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mainContent" class="main-content">
+        <div class="header">
+            <div class="logo-container" style="display:flex;align-items:center;justify-content:center;gap:0.8rem;flex-wrap:wrap;">
+                <img id="logoImg" src="" alt="" style="height:65px;object-fit:contain;display:none;">
+                <div style="text-align:left;">
+                    <div class="logo">PURE REVIVAL MINISTRIES</div>
+                    <div class="tagline">"Arena of Testimonies"</div>
+                </div>
+            </div>
+            <div id="userInfo"><span style="color:#fff;font-weight:bold;">👤 <span id="currentUserName"></span></span><button onclick="logout()" style="background:#fff;color:#6a0dad;border:none;padding:0.3rem 0.6rem;border-radius:15px;cursor:pointer;font-size:0.8rem;">Logout</button></div>
+        </div>
+        <div class="nav">
+            <button class="active" onclick="showSection('home',this)">🏠 Home</button>
+            <button onclick="showSection('videos',this)">🎬 Videos</button>
+            <button onclick="showSection('photos',this)">📷 Photos</button>
+            <button onclick="showSection('contact',this)">📍 Contact</button>
+            <button id="uploadBtn" style="display:none;" onclick="showSection('upload',this)">📤 Upload</button>
+        </div>
+        <div class="container">
+            <div id="home" class="section active">
+                <div class="hero"><h1>Welcome to PURE REVIVAL</h1><p>Experience God's power through our media.</p>
+                <div class="social-links" style="margin-top:1.5rem;display:flex;justify-content:center;gap:0.8rem;flex-wrap:wrap;">
+                    <a href="https://www.facebook.com/PureRevivalMinistries" target="_blank" class="social-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor;"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>Facebook</a>
+                    <a href="https://www.youtube.com/@PureRevivalMinistries" target="_blank" class="social-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor;"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>YouTube</a>
+                    <a href="https://www.tiktok.com/@purerevivalministry" target="_blank" class="social-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor;"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>TikTok</a>
+                </div>
+                </div>
+                <div class="stats"><div class="stat-card"><div class="number" id="videoCount">0</div><div class="label">Videos</div></div><div class="stat-card"><div class="number" id="photoCount">0</div><div class="label">Photos</div></div><div class="stat-card"><div class="number" id="totalViews">0</div><div class="label">Views</div></div></div>
+                <div class="card"><h3>📺 Recent</h3><div id="recentMedia" class="media-grid"></div></div>
+            </div>
+            <div id="videos" class="section"><div class="card"><h3>🎬 Videos</h3><div class="category-filter"><button class="active" onclick="filterMedia('video','all',this)">All</button><button onclick="filterMedia('video','sermon',this)">Sermons</button><button onclick="filterMedia('video','worship',this)">Worship</button><button onclick="filterMedia('video','testimony',this)">Testimonies</button></div><div id="videoGallery" class="media-grid"></div></div></div>
+            <div id="photos" class="section"><div class="card"><h3>📷 Photos</h3><div class="category-filter"><button class="active" onclick="filterMedia('photo','all',this)">All</button><button onclick="filterMedia('photo','service',this)">Services</button><button onclick="filterMedia('photo','event',this)">Events</button><button onclick="filterMedia('photo','baptism',this)">Baptisms</button></div><div id="photoGallery" class="media-grid"></div></div></div>
+            <div id="upload" class="section"><div class="card"><h3>📤 Upload</h3><form id="uploadForm"><div class="form-group"><label>Type</label><select id="mediaType" required onchange="toggleUpload()"><option value="">Select</option><option value="video-file">🎬 Video File</option><option value="video-link">🔗 YouTube Link</option><option value="photo">📷 Photo</option></select></div><div id="videoFileSection" style="display:none;"><div class="upload-area" onclick="document.getElementById('videoFileInput').click()"><div class="upload-icon">🎬</div><p>Select video</p><input type="file" id="videoFileInput" accept="video/*" style="display:none" onchange="handleVideo(this)"></div><div id="videoFilePreview"></div></div><div id="videoUrlSection" style="display:none;"><div class="form-group"><label>URL</label><input type="url" id="videoUrl" placeholder="https://youtube.com/watch?v=..."></div><div id="videoPreviewContainer"></div></div><div id="photoSection" style="display:none;"><div class="upload-area" onclick="document.getElementById('fileInput').click()"><div class="upload-icon">📁</div><p>Select photo</p><input type="file" id="fileInput" accept="image/*" style="display:none" onchange="handlePhoto(this)"></div><div id="filePreview"></div></div><div class="form-group"><label>Title</label><input type="text" id="mediaTitle" placeholder="Title" required></div><div class="form-group"><label>Category</label><select id="mediaCategory" required><option value="">Select</option><option value="sermon">Sermon</option><option value="worship">Worship</option><option value="testimony">Testimony</option><option value="event">Event</option><option value="service">Service</option><option value="baptism">Baptism</option></select></div><div class="form-group"><label>Description</label><textarea id="mediaDesc" rows="2" placeholder="Description"></textarea></div><button type="submit" class="btn">📤 Upload</button></form></div></div>
+        </div>
+        <div class="footer"><p>✝️ PURE REVIVAL © 2025 | Mark 16:15</p></div>
+    </div>
+
+    <div id="viewModal" class="modal">
+        <div class="modal-content"><div class="modal-header"><h3 id="modalTitle">Title</h3><button class="close-btn" onclick="closeModal()">×</button></div><div class="modal-body"><div id="modalMedia"></div><p id="modalDesc" style="margin-top:0.8rem;"></p><p style="font-size:0.75rem;opacity:0.6;" id="modalDate"></p><div class="interaction-bar"><button class="interaction-btn" id="likeBtn" onclick="toggleLike()"><span id="likeIcon">👍</span><span id="likeCount">0</span></button><button class="interaction-btn">💬 <span id="commentCount">0</span></button></div><div class="comments-section"><h4>💬 Comments</h4><div id="commentFormSection"><p style="opacity:0.8;font-size:0.85rem;"><a href="#" onclick="closeModal();openAuthModal();" style="color:#d4af37;">Login</a> to comment</p></div><div class="comment-form" id="loggedInCommentForm" style="display:none;"><textarea id="commentText" placeholder="Your thoughts..."></textarea><button onclick="addComment()">Post</button></div><div id="commentsContainer"></div></div></div></div>
+    </div>
+
+<script>
+let mediaData=[],selectedFile=null,adminMode=false,currentMediaId=null,currentUser=null,users=[],adminUsers=[];
+
+// Load logo from file
+async function loadLogo(){try{const data=await window.fs.readFile('paste-4.png');const blob=new Blob([data],{type:'image/png'});const url=URL.createObjectURL(blob);document.getElementById('logoImg').src=url;document.getElementById('logoImg').style.display='block'}catch(e){console.log('Logo not found')}}
+loadLogo();
+
+document.addEventListener('keydown',e=>{if(e.ctrlKey&&e.shiftKey&&e.key==='A'){if(!currentUser){alert('Login first');return}if(adminUsers.includes(currentUser.id)){adminUsers=adminUsers.filter(i=>i!==currentUser.id);adminMode=false;document.getElementById('uploadBtn').style.display='none';alert('Admin off 🔒')}else{adminUsers.push(currentUser.id);adminMode=true;document.getElementById('uploadBtn').style.display='inline-block';alert('Admin on 🔓')}save();refresh()}});
+
+function save(){localStorage.setItem('prMedia',JSON.stringify(mediaData));localStorage.setItem('prUsers',JSON.stringify(users));localStorage.setItem('prAdmins',JSON.stringify(adminUsers))}
+function openAuthModal(){document.getElementById('authModal').classList.add('active');showLogin()}
+function closeAuthModal(){document.getElementById('authModal').classList.remove('active')}
+function showLogin(){document.getElementById('loginForm').style.display='block';document.getElementById('signupForm').style.display='none';document.getElementById('authTitle').textContent='✝️ Welcome Back'}
+function showSignup(){document.getElementById('loginForm').style.display='none';document.getElementById('signupForm').style.display='block';document.getElementById('authTitle').textContent='✝️ Join Us'}
+
+function signup(){const n=document.getElementById('signupName').value.trim(),u=document.getElementById('signupUsername').value.trim(),p=document.getElementById('signupPassword').value.trim();if(!n||!u||!p){alert('Fill all fields');return}if(users.find(x=>x.username===u)){alert('Username taken');return}const user={id:Date.now(),name:n,username:u,password:p};users.push(user);currentUser={id:user.id,name:n,username:u};localStorage.setItem('prCurrent',JSON.stringify(currentUser));save();updateUI();closeAuthModal();document.getElementById('mainContent').classList.add('visible');alert('Welcome! 🙏');document.getElementById('signupName').value='';document.getElementById('signupUsername').value='';document.getElementById('signupPassword').value=''}
+
+function login(){const u=document.getElementById('loginUsername').value.trim(),p=document.getElementById('loginPassword').value.trim();if(!u||!p){alert('Enter credentials');return}const user=users.find(x=>x.username===u&&x.password===p);if(!user){alert('Invalid');return}currentUser={id:user.id,name:user.name,username:u};localStorage.setItem('prCurrent',JSON.stringify(currentUser));if(adminUsers.includes(currentUser.id)){adminMode=true;document.getElementById('uploadBtn').style.display='inline-block'}updateUI();closeAuthModal();document.getElementById('mainContent').classList.add('visible');alert('Welcome back! 🙏');document.getElementById('loginUsername').value='';document.getElementById('loginPassword').value='';refresh()}
+
+function logout(){if(!confirm('Logout?'))return;if(currentUser&&adminUsers.includes(currentUser.id)){adminUsers=adminUsers.filter(i=>i!==currentUser.id);save()}currentUser=null;adminMode=false;document.getElementById('uploadBtn').style.display='none';localStorage.removeItem('prCurrent');document.getElementById('mainContent').classList.remove('visible');openAuthModal();refresh()}
+
+function updateUI(){if(currentUser){let n=currentUser.name;if(adminUsers.includes(currentUser.id))n+=' 👑';document.getElementById('currentUserName').textContent=n;document.getElementById('commentFormSection').style.display='none';document.getElementById('loggedInCommentForm').style.display='block'}else{document.getElementById('commentFormSection').style.display='block';document.getElementById('loggedInCommentForm').style.display='none'}}
+
+function toggleUpload(){const t=document.getElementById('mediaType').value;document.getElementById('videoFileSection').style.display=t==='video-file'?'block':'none';document.getElementById('videoUrlSection').style.display=t==='video-link'?'block':'none';document.getElementById('photoSection').style.display=t==='photo'?'block':'none'}
+function handleVideo(i){if(i.files[0]){selectedFile=i.files[0];const r=new FileReader();r.onload=e=>{document.getElementById('videoFilePreview').innerHTML=`<video src="${e.target.result}" style="width:100%;max-height:120px;border-radius:8px;" controls></video>`};r.readAsDataURL(selectedFile)}}
+function handlePhoto(i){if(i.files[0]){selectedFile=i.files[0];const r=new FileReader();r.onload=e=>{document.getElementById('filePreview').innerHTML=`<img src="${e.target.result}" style="width:100%;max-height:120px;object-fit:contain;border-radius:8px;">`};r.readAsDataURL(selectedFile)}}
+function getEmbed(url){let yt=url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\?\/]+)/);if(yt)return{embed:`https://www.youtube.com/embed/${yt[1]}`,thumb:`https://img.youtube.com/vi/${yt[1]}/hqdefault.jpg`};let vm=url.match(/vimeo\.com\/(\d+)/);if(vm)return{embed:`https://player.vimeo.com/video/${vm[1]}`,thumb:''};return null}
+
+document.getElementById('videoUrl')?.addEventListener('input',e=>{const url=e.target.value,p=document.getElementById('videoPreviewContainer');if(url){const d=getEmbed(url);p.innerHTML=d?`<iframe src="${d.embed}" style="width:100%;height:150px;border-radius:8px;border:none;" allowfullscreen></iframe>`:'<p style="color:#e74c3c;">Invalid URL</p>'}else p.innerHTML=''});
+
+window.addEventListener('load',()=>{try{const m=localStorage.getItem('prMedia');if(m)mediaData=JSON.parse(m);const u=localStorage.getItem('prUsers');if(u)users=JSON.parse(u);const a=localStorage.getItem('prAdmins');if(a)adminUsers=JSON.parse(a);const c=localStorage.getItem('prCurrent');if(c){currentUser=JSON.parse(c);if(adminUsers.includes(currentUser.id)){adminMode=true;document.getElementById('uploadBtn').style.display='inline-block'}updateUI();closeAuthModal();document.getElementById('mainContent').classList.add('visible')}}catch(e){}stats();refresh()});
+
+function showSection(s,btn){
+    document.querySelectorAll('.section').forEach(x=>x.classList.remove('active'));
+    document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));
+    document.getElementById(s).classList.add('active');
+    if(btn)btn.classList.add('active');
+    
+    // Update storage info when showing upload section
+    if(s === 'upload') updateStorageInfo();
+}
+
+async function updateStorageInfo() {
+    const info = document.getElementById('storageInfo');
+    if (!info) return;
+    
+    try {
+        if (navigator.storage && navigator.storage.estimate) {
+            const estimate = await navigator.storage.estimate();
+            const usedMB = (estimate.usage / (1024 * 1024)).toFixed(1);
+            const totalMB = (estimate.quota / (1024 * 1024)).toFixed(0);
+            const usedPercent = ((estimate.usage / estimate.quota) * 100).toFixed(1);
+            
+            let color = '#9b30ff';
+            let icon = '💾';
+            if (usedPercent > 80) {
+                color = '#ff4757';
+                icon = '⚠️';
+            } else if (usedPercent > 60) {
+                color = '#ffa502';
+                icon = '📊';
+            }
+            
+            info.innerHTML = `<div style="display:flex;align-items:center;gap:0.5rem;"><span style="font-size:1.2rem;">${icon}</span><div style="flex:1;"><strong>Storage:</strong> ${usedMB}MB / ${totalMB}MB (${usedPercent}% used)<br><div style="background:rgba(0,0,0,0.3);height:6px;border-radius:3px;margin-top:0.3rem;overflow:hidden;"><div style="background:${color};width:${usedPercent}%;height:100%;border-radius:3px;transition:width 0.3s;"></div></div></div></div>`;
+        } else {
+            info.innerHTML = '<span>💾 IndexedDB enabled - much larger storage capacity!</span>';
+        }
+    } catch (e) {
+        info.innerHTML = '<span>💾 Storage info unavailable</span>';
+    }
+}
+function stats(){document.getElementById('videoCount').textContent=mediaData.filter(m=>m.type==='video').length;document.getElementById('photoCount').textContent=mediaData.filter(m=>m.type==='photo').length;document.getElementById('totalViews').textContent=mediaData.reduce((s,m)=>s+(m.views||0),0)}
+function refresh(){loadRecent();loadGallery('video');loadGallery('photo')}
+function loadRecent(){const c=document.getElementById('recentMedia'),r=mediaData.slice(0,6);c.innerHTML=r.length?r.map(m=>card(m)).join(''):'<div class="empty-state"><div class="icon">📭</div><p>No media yet</p></div>'}
+function loadGallery(t){const c=document.getElementById(t+'Gallery'),items=mediaData.filter(m=>m.type===t);c.innerHTML=items.length?items.map(m=>card(m)).join(''):'<div class="empty-state"><div class="icon">'+(t==='video'?'🎬':'📷')+'</div><p>No '+t+'s</p></div>'}
+function filterMedia(t,cat,btn){const c=document.getElementById(t+'Gallery');let items=mediaData.filter(m=>m.type===t);if(cat!=='all')items=items.filter(m=>m.category===cat);btn.parentElement.querySelectorAll('button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');c.innerHTML=items.length?items.map(m=>card(m)).join(''):'<div class="empty-state"><div class="icon">📭</div><p>None</p></div>'}
+function card(m){const icon=m.type==='video'?'🎬':'📷';let thumb;if(m.thumb)thumb=`<img src="${m.thumb}">`;else if(m.file&&m.type==='video')thumb=`<video src="${m.file}"></video>`;else if(m.file)thumb=`<img src="${m.file}">`;else thumb='<div class="placeholder">🎬</div>';return`<div class="media-card"><div class="media-thumbnail">${thumb}</div><div class="media-info"><h4>${icon} ${m.title}</h4><p>${(m.description||'').substring(0,40)}...</p><p class="date">📅 ${m.date} • 👁️ ${m.views||0}</p><div class="media-actions"><button class="watch-btn" onclick="view(${m.id})">👁️ View</button>${adminMode?`<button class="delete-btn" onclick="del(${m.id})">🗑️</button>`:''}</div></div></div>`}
+
+function view(id){const m=mediaData.find(x=>x.id===id);if(!m)return;currentMediaId=id;m.views=(m.views||0)+1;save();stats();if(!m.comments)m.comments=[];if(!m.likes)m.likes=0;document.getElementById('modalTitle').textContent=m.title;document.getElementById('modalDesc').textContent=m.description||'';document.getElementById('modalDate').textContent=`📅 ${m.date} • 👁️ ${m.views} • 📁 ${m.category}`;const mc=document.getElementById('modalMedia');if(m.embed)mc.innerHTML=`<iframe src="${m.embed}" style="width:100%;height:350px;border-radius:8px;border:none;" allowfullscreen></iframe>`;else if(m.type==='video')mc.innerHTML=`<video src="${m.file}" controls autoplay style="width:100%;border-radius:8px;"></video>`;else mc.innerHTML=`<img src="${m.file}" style="width:100%;border-radius:8px;">`;document.getElementById('likeCount').textContent=m.likes||0;const liked=localStorage.getItem('liked_'+id)==='true';document.getElementById('likeBtn').classList.toggle('liked',liked);document.getElementById('likeIcon').textContent=liked?'❤️':'👍';loadComments(m);document.getElementById('viewModal').classList.add('active')}
+
+function toggleLike(){const m=mediaData.find(x=>x.id===currentMediaId);if(!m)return;const liked=localStorage.getItem('liked_'+currentMediaId)==='true';if(liked){m.likes=Math.max(0,(m.likes||0)-1);localStorage.removeItem('liked_'+currentMediaId);document.getElementById('likeBtn').classList.remove('liked');document.getElementById('likeIcon').textContent='👍'}else{m.likes=(m.likes||0)+1;localStorage.setItem('liked_'+currentMediaId,'true');document.getElementById('likeBtn').classList.add('liked');document.getElementById('likeIcon').textContent='❤️'}document.getElementById('likeCount').textContent=m.likes;save();refresh()}
+function loadComments(m){const c=document.getElementById('commentsContainer'),comments=m.comments||[];document.getElementById('commentCount').textContent=comments.length;updateUI();c.innerHTML=comments.length?comments.map((x,i)=>`<div class="comment"><div class="comment-header"><span class="comment-author">✝️ ${x.userName}</span><div><span class="comment-date">${x.date}</span>${adminMode||(currentUser&&currentUser.id===x.userId)?`<button class="delete-comment" onclick="delComment(${i})">×</button>`:''}</div></div><div class="comment-text">${x.text}</div></div>`).join(''):'<p style="opacity:0.6;text-align:center;padding:1rem;">No comments yet</p>'}
+function addComment(){if(!currentUser){alert('Login to comment');openAuthModal();return}const t=document.getElementById('commentText').value.trim();if(!t){alert('Enter comment');return}const m=mediaData.find(x=>x.id===currentMediaId);if(!m)return;if(!m.comments)m.comments=[];m.comments.unshift({userId:currentUser.id,userName:currentUser.name,text:t,date:new Date().toLocaleString()});save();document.getElementById('commentText').value='';loadComments(m)}
+function delComment(i){const m=mediaData.find(x=>x.id===currentMediaId);if(!m)return;const c=m.comments[i];if(!adminMode&&(!currentUser||currentUser.id!==c.userId)){alert('Cannot delete');return}if(!confirm('Delete?'))return;m.comments.splice(i,1);save();loadComments(m)}
+function closeModal(){document.getElementById('viewModal').classList.remove('active');document.getElementById('modalMedia').innerHTML='';currentMediaId=null}
+function del(id){if(!adminMode){alert('Admin only');return}if(!confirm('Delete?'))return;mediaData=mediaData.filter(m=>m.id!==id);save();stats();refresh();alert('Deleted')}
+document.getElementById('viewModal').addEventListener('click',e=>{if(e.target.id==='viewModal')closeModal()});
+document.getElementById('authModal').addEventListener('click',e=>{if(e.target.id==='authModal'&&currentUser)closeAuthModal()});
+
+document.getElementById('uploadForm').addEventListener('submit',function(e){e.preventDefault();const t=document.getElementById('mediaType').value;if(t==='video-link'){const url=document.getElementById('videoUrl').value;if(!url){alert('Enter URL');return}const d=getEmbed(url);if(!d){alert('Invalid URL');return}const m={id:Date.now(),type:'video',title:document.getElementById('mediaTitle').value,category:document.getElementById('mediaCategory').value,description:document.getElementById('mediaDesc').value,embed:d.embed,thumb:d.thumb,date:new Date().toLocaleDateString(),views:0,likes:0,comments:[]};mediaData.unshift(m);save();stats();refresh();this.reset();document.getElementById('videoPreviewContainer').innerHTML='';toggleUpload();alert('Added! 🙏')}else if(t==='video-file'||t==='photo'){if(!selectedFile){alert('Select file');return}const r=new FileReader();r.onload=ev=>{const m={id:Date.now(),type:t==='video-file'?'video':'photo',title:document.getElementById('mediaTitle').value,category:document.getElementById('mediaCategory').value,description:document.getElementById('mediaDesc').value,file:ev.target.result,date:new Date().toLocaleDateString(),views:0,likes:0,comments:[]};mediaData.unshift(m);save();stats();refresh();document.getElementById('uploadForm').reset();document.getElementById('videoFilePreview').innerHTML='';document.getElementById('filePreview').innerHTML='';selectedFile=null;toggleUpload();alert('Uploaded! 🙏')};r.readAsDataURL(selectedFile)}});
+</script></body></html>
